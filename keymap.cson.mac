@@ -1,0 +1,209 @@
+'body':
+  'cmd-u': 'pane:show-previous-item'
+  'cmd-o': 'pane:show-next-item'
+  'cmd-shift-u': 'pane:move-item-left'
+  'cmd-shift-o': 'pane:move-item-right'
+  'cmd-shift-s': 'window:save-all'
+  'cmd-,': 'window:focus-pane-on-left'
+  'cmd-.': 'window:focus-pane-on-right'
+
+
+'.workspace':
+  'cmd-1': 'pane:show-item-1'
+  'cmd-2': 'pane:show-item-2'
+  'cmd-3': 'pane:show-item-3'
+  'cmd-4': 'pane:show-item-4'
+  'cmd-5': 'pane:show-item-5'
+  'cmd-6': 'pane:show-item-6'
+  'cmd-7': 'pane:show-item-7'
+  'cmd-8': 'pane:show-item-8'
+  'cmd-9': 'pane:show-item-9'
+
+  'cmd-\\': 'tree-view:toggle'
+
+  'cmd-w': 'core:close'
+  'cmd-shift-t': 'pane:reopen-closed-item'
+
+'.platform-darwin, .platform-darwin .command-palette atom-text-editor':
+  'shift-cmd-P': 'command-palette:toggle'
+
+'atom-text-editor':
+  'enter': 'editor:newline'
+  'backspace': 'core:backspace'
+  'escape': 'core:cancel'
+
+  'cmd-n': 'application:new-file'
+
+  'cmd-z': 'core:undo'
+  'cmd-Z': 'core:redo'
+  'cmd-s': 'core:save'
+
+  'cmd-v': 'core:paste'
+  'cmd-c': 'core:copy'
+  'cmd-x': 'core:cut'
+
+  'cmd-d': 'find-and-replace:select-next'
+
+  'cmd-a': 'core:select-all'
+  'cmd-f': 'find-and-replace:show'
+  'cmd-shift-f': 'project-find:toggle'
+
+  'tab': 'editor:indent'
+  'shift-tab':'editor:outdent-selected-rows'
+  'cmd-p': 'fuzzy-finder:toggle-file-finder'
+
+  'cmd-/': 'editor:toggle-line-comments'
+
+  'cmd-g': 'jumpy:toggle'
+
+  'cmd-i': 'core:move-up'
+  'cmd-j': 'core:move-left'
+  'cmd-k': 'core:move-down'
+  'cmd-l': 'core:move-right'
+  'cmd-h': 'editor:move-to-first-character-of-line'
+  'cmd-;': 'editor:move-to-end-of-screen-line'
+
+  'cmd-shift-i': 'core:select-up'
+  'cmd-shift-j': 'core:select-left'
+  'cmd-shift-k': 'core:select-down'
+  'cmd-shift-l': 'core:select-right'
+  'cmd-shift-h': 'editor:select-to-first-character-of-line'
+  'cmd-shift-;': 'editor:select-to-end-of-line'
+
+  'cmd-ctrl-j': 'editor:move-to-beginning-of-word'
+  'cmd-ctrl-l': 'editor:move-to-end-of-word'
+  'cmd-ctrl-shift-j': 'editor:select-to-beginning-of-word'
+  'cmd-ctrl-shift-l': 'editor:select-to-end-of-word'
+
+'.select-list atom-text-editor[mini]':
+  'enter': 'core:confirm'
+
+'.find-and-replace atom-text-editor[mini]':
+  'enter': 'core:confirm'
+
+'atom-workspace atom-text-editor':
+  # Unset editor keybindings (conflict with multi-cursor-plus)
+  'cmd-left':        'unset!'
+  'cmd-right':       'unset!'
+  'cmd-shift-left':  'unset!'
+  'cmd-shift-right': 'unset!'
+
+'atom-workspace':
+  # Key bindings for multi-cursor-plus
+  'ctrl-x':               'multi-cursor-plus:mark'
+  'ctrl-up':              'multi-cursor-plus:move-up'
+  'ctrl-down':            'multi-cursor-plus:move-down'
+  'ctrl-left':            'multi-cursor-plus:move-left'
+  'ctrl-right':           'multi-cursor-plus:move-right'
+  'ctrl-cmd-left':        'multi-cursor-plus:move-to-beginning-of-word'
+  'ctrl-cmd-right':       'multi-cursor-plus:move-to-end-of-word'
+  'ctrl-home':            'multi-cursor-plus:move-to-first-character-of-line'
+  'ctrl-end':             'multi-cursor-plus:move-to-end-of-line'
+  'ctrl-cmd-home':        'multi-cursor-plus:move-to-top'
+  'ctrl-cmd-end':         'multi-cursor-plus:move-to-bottom'
+  'cmd-shift-up':         'multi-cursor-plus:select-up'
+  'cmd-shift-down':       'multi-cursor-plus:select-down'
+  'cmd-shift-left':       'multi-cursor-plus:select-left'
+  'cmd-shift-right':      'multi-cursor-plus:select-right'
+  'ctrl-cmd-shift-left':  'multi-cursor-plus:select-to-beginning-of-word'
+  'ctrl-cmd-shift-right': 'multi-cursor-plus:select-to-end-of-word'
+  'cmd-shift-home':       'multi-cursor-plus:select-to-first-character-of-line'
+  'cmd-shift-end':        'multi-cursor-plus:select-to-end-of-line'
+  'ctrl-cmd-shift-home':  'multi-cursor-plus:select-to-top'
+  'ctrl-cmd-shift-end':   'multi-cursor-plus:select-to-bottom'
+  'ctrl-alt-cmd-l': 'left-align:toggle'
+
+
+'atom-workspace atom-text-editor:not([mini])':
+  'cmd-r l': 'proto-repl:toggle'
+  'cmd-r shift-l': 'proto-repl:toggle-current-project-clj'
+  'cmd-r j': 'proto-repl:start-self-hosted-repl'
+  'cmd-r y': 'proto-repl:remote-nrepl-connection'
+  'cmd-r e': 'proto-repl:exit-repl'
+  'cmd-r k': 'proto-repl:clear-repl'
+  'ctrl-cmd-< s': 'proto-repl:toggle-auto-scroll'
+  'cmd-r b': 'proto-repl:execute-block'
+  'cmd-r B': 'proto-repl:execute-top-block'
+  'cmd-r s': 'proto-repl:execute-selected-text'
+  'cmd-r f': 'proto-repl:load-current-file'
+  'cmd-r r': 'proto-repl:refresh-namespaces'
+  'ctrl-cmd-< r': 'proto-repl:super-refresh-namespaces'
+  'cmd-r p': 'proto-repl:pretty-print'
+  'cmd-r x': 'proto-repl:run-tests-in-namespace'
+  'cmd-r t': 'proto-repl:run-test-under-cursor'
+  'cmd-r a': 'proto-repl:run-all-tests'
+  'cmd-r d': 'proto-repl:print-var-documentation'
+  'cmd-r c': 'proto-repl:print-var-code'
+  'cmd-r n': 'proto-repl:list-ns-vars'
+  'ctrl-cmd-< n': 'proto-repl:list-ns-vars-with-docs'
+  'cmd-r o': 'proto-repl:open-file-containing-var'
+  'ctrl-shift-c': 'proto-repl:interrupt'
+  'shift-
+  ': 'proto-repl:execute-text-entered-in-repl'
+  'ctrl-cmd-< i': 'proto-repl:insert-save-value-call'
+  'ctrl-cmd-< d': 'proto-repl:display-saved-values'
+  'ctrl-cmd-< c': 'proto-repl:clear-saved-values'
+
+  'cmd-shift-up': 'unset!'
+  'cmd-shift-down': 'unset!'
+  'cmd-up:':'unset!'
+  'cmd-down':'unset!'
+
+  'ctrl-.': 'key-binding-resolver:toggle'
+
+  'ctrl-d': 'find-and-replace:select-next'
+
+'.platform-darwin atom-text-editor':
+    'ctrl-cmd-a': 'atom-alignment:alignMultiple'
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+    'ctrl-alt-a': 'atom-alignment:alignMultiple'
+
+'atom-text-editor:not([mini])':
+  'cmd-up': 'unset!'
+
+
+'atom-text-editor[data-grammar~="clojure"],
+ atom-text-editor[data-grammar~="lisp"],
+ atom-text-editor[data-grammar~="newlisp"],
+ atom-text-editor[data-grammar~="racket"],
+ atom-text-editor[data-grammar~="scheme"]':
+  'ctrl-alt-,':         'lisp-paredit:barf-forwards'
+  'ctrl-alt-.':         'lisp-paredit:slurp-forwards'
+  'ctrl-alt-<':         'lisp-paredit:slurp-backwards'
+  'ctrl-alt->':         'lisp-paredit:barf-backwards'
+
+  'cmd-delete':         'lisp-paredit:kill-sexp-forwards'
+
+  'cmd-backspace':      'lisp-paredit:kill-sexp-backwards'
+  'alt-backspace':      'lisp-paredit:kill-sexp-backwards'
+
+  'ctrl-alt-i':         'lisp-paredit:indent'
+
+  'ctrl-right':         'lisp-paredit:forward-sexp'
+  'ctrl-left':          'lisp-paredit:backward-sexp'
+  'ctrl-up':            'lisp-paredit:up-sexp'
+  'ctrl-down':          'lisp-paredit:down-sexp'
+  'ctrl-w':             'lisp-paredit:expand-selection'
+  'ctrl-alt-space':     'lisp-paredit:contract-selection'
+
+  'enter':              'lisp-paredit:newline'
+
+  'ctrl-alt-up':        'lisp-paredit:splice-backwards'
+  'ctrl-alt-down':      'lisp-paredit:splice-forwards'
+  'ctrl-alt-s':         'lisp-paredit:splice'
+  'ctrl-alt-/':         'lisp-paredit:split'
+  'ctrl-alt-(':         'lisp-paredit:wrap-around-parens'
+  'ctrl-alt-9':         'lisp-paredit:wrap-around-parens'
+  'ctrl-alt-[':         'lisp-paredit:wrap-around-square'
+  'ctrl-alt-{':         'lisp-paredit:wrap-around-curly'
+
+'atom-text-editor[data-grammar~="clojure"].lisp-paredit-strict,
+ atom-text-editor[data-grammar~="lisp"].lisp-paredit-strict,
+ atom-text-editor[data-grammar~="newlisp"].lisp-paredit-strict,
+ atom-text-editor[data-grammar~="racket"].lisp-paredit-strict,
+ atom-text-editor[data-grammar~="scheme"].lisp-paredit-strict':
+  'backspace':          'lisp-paredit:delete-backwards'
+  'ctrl-h':             'lisp-paredit:delete-backwards'
+  'delete':             'lisp-paredit:delete-forwards'
+  'ctrl-d':             'lisp-paredit:delete-forwards'
+  'cmd-v':              'lisp-paredit:paste'
