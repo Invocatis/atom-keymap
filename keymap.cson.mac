@@ -1,3 +1,17 @@
+'*':
+  'cmd-k cmd-0': 'unset!'
+  'cmd-k cmd-1': 'unset!'
+  'cmd-k cmd-2': 'unset!'
+  'cmd-k cmd-3': 'unset!'
+  'cmd-k cmd-4': 'unset!'
+  'cmd-k cmd-5': 'unset!'
+  'cmd-k cmd-6': 'unset!'
+  'cmd-k cmd-7': 'unset!'
+  'cmd-k cmd-8': 'unset!'
+  'cmd-k cmd-9': 'unset!'
+  'cmd-k cmd-d': 'unset!'
+  'cmd-k cmd-b': 'unset!'
+
 'body':
   'cmd-u': 'pane:show-previous-item'
   'cmd-o': 'pane:show-next-item'
@@ -6,7 +20,18 @@
   'cmd-shift-s': 'window:save-all'
   'cmd-,': 'window:focus-pane-on-left'
   'cmd-.': 'window:focus-pane-on-right'
-
+  'cmd-k up': 'unset!'
+  'cmd-k down': 'unset!'
+  'cmd-k left': 'unset!'
+  'cmd-k right': 'unset!'
+  'cmd-k cmd-w': 'unset!'
+  'cmd-k cmd-alt-w': 'unset!'
+  'cmd-k cmd-p': 'unset!'
+  'cmd-k cmd-n': 'unset!'
+  'cmd-k cmd-up': 'unset!'
+  'cmd-k cmd-down': 'unset!'
+  'cmd-k cmd-left': 'unset!'
+  'cmd-k cmd-right': 'unset!'
 
 '.workspace':
   'cmd-1': 'pane:show-item-1'
@@ -26,6 +51,7 @@
 
 '.platform-darwin, .platform-darwin .command-palette atom-text-editor':
   'shift-cmd-P': 'command-palette:toggle'
+
 
 'atom-text-editor':
   'enter': 'editor:newline'
@@ -87,6 +113,8 @@
   'cmd-right':       'unset!'
   'cmd-shift-left':  'unset!'
   'cmd-shift-right': 'unset!'
+  'cmd-k cmd-u': 'unset!'
+  'cmd-k cmd-l': 'unset!'
 
 'atom-workspace':
   # Key bindings for multi-cursor-plus
@@ -153,8 +181,12 @@
 
   'ctrl-d': 'find-and-replace:select-next'
 
+
 '.platform-darwin atom-text-editor':
     'ctrl-cmd-a': 'atom-alignment:alignMultiple'
+    'cmd-:': 'unset!'
+    'cmd-u': 'unset!'
+    
 '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
     'ctrl-alt-a': 'atom-alignment:alignMultiple'
 
